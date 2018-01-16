@@ -23,11 +23,11 @@ console.log('API funcionando!');
 
 function execSQLQuery(sqlQry, res) {
     const connection = mysql.createConnection({
-        host: 'us-cdbr-iron-east-05.cleardb.net',
+        host: process.env.HOST_MYSQL || 'localhost',
         port: 3306,
-        user: 'b73c66257781cc',
-        password: 'f57ec2ff',
-        database: '`heroku_0674db4adc0cead`'
+        user: process.env.USER_MYSQL || 'root',
+        password: process.env.PASSWORD_MYSQL || '123456',
+        database: process.env.DATABASE_MYSQL || 'teste'
     });
 
     connection.query(sqlQry, function (error, results, fields) {
