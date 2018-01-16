@@ -35,8 +35,8 @@ function execSQLQuery(sqlQry, res) {
             res.json(error);
         else
             res.json(results);
-        connection.end();
-        console.log('executou!');
+        //connection.end();
+        //console.log('executou!');
     });
 }
 
@@ -56,7 +56,7 @@ router.delete('/clientes/excluir/:id', (req, res) => {
     console.log('Registro excluido!');
 });
 
-//curl - X DELETE http://localhost:3000/clientes/excluir/1
+//curl -X DELETE http://localhost:3000/clientes/excluir/1
 
 router.post('/clientes/inserir', (req, res) => {
     const nome = req.body.nome.substring(0, 150);
@@ -64,7 +64,7 @@ router.post('/clientes/inserir', (req, res) => {
     execSQLQuery(`INSERT INTO clientes (nome, cpf) VALUES('${nome}','${cpf}')`, res);
 });
 
-//curl - X POST - d "nome=luiz&cpf=12345678901" http://localhost:3000/clientes/inserir
+//curl -X POST -d "nome=luiz&cpf=12345678901" http://localhost:3000/clientes/inserir
 
 router.patch('/clientes/atualizar/:id', (req, res) => {
     const id = parseInt(req.params.id);
@@ -73,4 +73,4 @@ router.patch('/clientes/atualizar/:id', (req, res) => {
     execSQLQuery(`UPDATE clientes SET nome='${nome}', cpf='${cpf}' WHERE id=${id}`, res);
 });
 
-//cURL - X PATCH - d "nome=fernando&cpf=12345678901" http://localhost:3000/clientes/atualizar/4
+//curl -X PATCH -d "nome=fernando&cpf=12345678901" http://localhost:3000/clientes/atualizar/4
