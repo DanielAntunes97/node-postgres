@@ -1,8 +1,10 @@
 const express = require('express');
-const app = express();
-const bodyParser = require('body-parser');
-const port = process.env.PORT || 5000; //porta padrão
 const mysql = require('mysql');
+const bodyParser = require('body-parser');
+
+const port = process.env.PORT || 5000; //porta padrão
+
+const app = express();
 
 //configurando o body parser para pegar POSTS mais tarde
 app.use(bodyParser.urlencoded({
