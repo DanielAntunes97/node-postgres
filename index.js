@@ -53,26 +53,26 @@ router.get('/clientes/:id?', (req, res) => {
     execSQLQuery('SELECT * FROM clientes' + filter, res);
 });
 
-router.delete('/clientes/excluir/:id', (req, res) => {
+router.delete('/clientes/:id', (req, res) => {
     execSQLQuery(`DELETE FROM clientes WHERE id=${parseInt(req.params.id)}`, res);
     console.log('Registro excluido!');
 });
 
-//curl -X DELETE http://localhost:3000/clientes/excluir/1
+//curl -X DELETE http://localhost:3000/clientes/1
 
-router.post('/clientes/inserir', (req, res) => {
+router.post('/clientes', (req, res) => {
     const nome = req.body.nome.substring(0, 150);
     const cpf = req.body.cpf.substring(0, 11);
     execSQLQuery(`INSERT INTO clientes (nome, cpf) VALUES('${nome}','${cpf}')`, res);
 });
 
-//curl -X POST -d "nome=luiz&cpf=12345678901" http://localhost:3000/clientes/inserir
+//curl -X POST -d "nome=luiz&cpf=12345678901" http://localhost:3000/clientes
 
-router.patch('/clientes/atualizar/:id', (req, res) => {
+router.patch('/clientes/:id', (req, res) => {
     const id = parseInt(req.params.id);
     const nome = req.body.nome.substring(0, 150);
     const cpf = req.body.cpf.substring(0, 11);
     execSQLQuery(`UPDATE clientes SET nome='${nome}', cpf='${cpf}' WHERE id=${id}`, res);
 });
 
-//curl -X PATCH -d "nome=fernando&cpf=12345678901" http://localhost:3000/clientes/atualizar/4
+//curl -X PATCH -d "nome=fernando&cpf=12345678901" http://localhost:3000/clientes/4
