@@ -16,12 +16,11 @@ foo@bar:~$ yarn install
 
 ### Usage
 
-localhost:5000
-
-```
-[GET] /users
-[GET] /users/:id
-[POST] /users
-[PUT] /users/:id
-[DELETE] /users/:id
-```
+- Base URL
+    - http://localhost:5000
+- Available endpoints
+    - [GET] http://localhost:5000/users
+    - [GET] http://localhost:5000/users/:id
+    - [POST] http://localhost:5000/users
+    - [PUT] http://localhost:5000/users/:id
+    - [DELETE] http://localhost:5000/users/:id
