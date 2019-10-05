@@ -1,6 +1,6 @@
 <h1 align="center">:rocket: API Node.js PostgreSQL :rocket:</h1>
 
-<span align="center">Creating a simple API using Node.js and PostgreSQL</span>
+>Creating a simple API using Node.js and PostgreSQL
 
 ## Getting Started
 
