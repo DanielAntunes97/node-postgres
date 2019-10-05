@@ -16,7 +16,7 @@ yarn install
 
 ### Usage
 
-**URL:** localhost:5000
+[localhost:5000](localhost:5000)
 
 ```
 [GET] /users
