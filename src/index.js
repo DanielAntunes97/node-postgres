@@ -10,16 +10,7 @@ app.use(bodyParser.urlencoded({ extended: true }))
 
 app.get('/', (req, res) => {
   res.send({
-    title: 'A simple API using Node.js and PostgreSQL',
-    endpoints: {
-      GET: {
-        1: '/users',
-        2: '/users/:id'
-      },
-      POST: '/users',
-      PUT: '/users',
-      DELETE: '/users/:id'
-    }
+    title: 'A simple API using Node.js and PostgreSQL'
   })
 })
 
