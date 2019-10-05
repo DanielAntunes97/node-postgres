@@ -9,9 +9,8 @@ To run the project, you need to have Node (and NPM) installed:
 ```console
 foo@bar:~$ npm install
 ```
-or
 ```console
-foo@bar:~$ yarn install
+foo@bar:~$ npm start
 ```
 
 ### Usage
