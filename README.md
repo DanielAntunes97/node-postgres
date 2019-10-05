@@ -14,4 +14,8 @@ npm install or yarn install
 
 ```
 [GET] /users
+[GET] /users/:id
+[POST] /users
+[PUT] /users/:id
+[DELETE] /users/:id
 ```
