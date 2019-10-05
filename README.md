@@ -11,7 +11,7 @@ foo@bar:~$ npm install
 ```
 or
 ```console
-foo@bar:~$ npm install
+foo@bar:~$ yarn install
 ```
 
 ### Usage
