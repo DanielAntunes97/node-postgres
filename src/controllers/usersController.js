@@ -22,7 +22,7 @@ router.post('/users', (req, res) => {
     .catch(err => res.status(400).send({ error: 'Insert failed' }))
 })
 
-router.patch('/users/:id', (req, res) => {
+router.put('/users/:id', (req, res) => {
   Users.update(req.body, {
     where: { id: req.params.id }
   })
