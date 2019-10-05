@@ -6,11 +6,11 @@ Creating a simple API using Node.js and PostgreSQL
 
 To run the project, you need to have Node (and NPM) installed:
 
-```
+```bash
 npm install
 ```
 or
-```
+```bash
 yarn install
 ```
 
