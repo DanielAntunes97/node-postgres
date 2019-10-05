@@ -12,6 +12,8 @@ npm install or yarn install
 
 ### Usage
 
+URL: localhost:5000
+
 ```
 [GET] /users
 [GET] /users/:id
