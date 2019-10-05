@@ -2,21 +2,21 @@
 
 >Creating a simple API using Node.js and PostgreSQL
 
-## Getting Started
+## Installation
 
 To run the project, you need to have Node (and NPM) installed:
 
-```bash
-npm install
+```console
+foo@bar:~$ npm install
 ```
 or
-```bash
-yarn install
+```console
+foo@bar:~$ npm install
 ```
 
 ### Usage
 
-localhost:5000(localhost:5000)
+localhost:5000
 
 ```
 [GET] /users
