@@ -4,7 +4,7 @@
 
 ## Installation
 
-To run the project, you need to have Node (and NPM) installed:
+To run the project, you need to have Node (and **npm** or **yarn**) installed:
 
 ```console
 foo@bar:~$ npm install
