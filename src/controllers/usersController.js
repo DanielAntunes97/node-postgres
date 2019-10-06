@@ -18,8 +18,8 @@ router.get('/users/:id', (req, res) => {
 
 router.post('/users', (req, res) => {
   Users.create(req.body)
-    .then(user => res.send({ user }))
-    .catch(err => res.status(400).send({ error: 'Insert failed' }))
+    .then(user => res.status(201).send({ user }))
+    .catch(err => res.status(400).send({ message: err.message }))
 })
 
 router.put('/users/:id', (req, res) => {
@@ -29,7 +29,7 @@ router.put('/users/:id', (req, res) => {
     .then(rowUpdated => {
       if (rowUpdated[0] === 1) res.send({ message: 'Updated successfully' })
     })
-    .catch(err => res.status(400).send({ error: 'Update failed' }))
+    .catch(err => res.status(400).send({ message: err.message }))
 })
 
 router.delete('/users/:id', (req, res) => {
