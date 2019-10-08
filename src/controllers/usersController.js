@@ -7,13 +7,13 @@ const router = express.Router()
 router.get('/users', (req, res) => {
   Users.findAll()
     .then(users => res.send({ users }))
-    .catch(err => res.status(400).send({ error: 'Find users failed' }))
+    .catch(_ => res.status(400).send({ error: 'Find users failed' }))
 })
 
 router.get('/users/:id', (req, res) => {
   Users.findByPk(req.params.id)
     .then(user => res.send({ user }))
-    .catch(err => res.status(400).send({ error: 'Find user failed' }))
+    .catch(_ => res.status(400).send({ error: 'Find user failed' }))
 })
 
 router.post('/users', (req, res) => {
@@ -43,7 +43,7 @@ router.delete('/users/:id', (req, res) => {
 
       res.send({ message: 'Record not found' })
     })
-    .catch(err => res.status(400).send({ error: 'Delete failed' }))
+    .catch(_ => res.status(400).send({ error: 'Delete failed' }))
 })
 
 module.exports = app => app.use(router)
