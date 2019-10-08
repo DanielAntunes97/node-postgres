@@ -12,6 +12,8 @@
   <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
 </p>
 
+<br>
+
 >Creating a simple API using Node.js and PostgreSQL
 
 ## Installation
