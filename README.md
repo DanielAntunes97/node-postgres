@@ -30,10 +30,10 @@ foo@bar:~$ npm start
 ### Usage
 
 - Base URL
-  - http://localhost:5000
+  - <http://localhost:5000>
 - Available endpoints
-  - **[GET]** http://localhost:5000/users
-  - **[GET]** http://localhost:5000/users/:id
-  - **[POST]** http://localhost:5000/users
-  - **[PUT]** http://localhost:5000/users/:id
-  - **[DELETE]** http://localhost:5000/users/:id
+  - **[GET]** <http://localhost:5000/users>
+  - **[GET]** <http://localhost:5000/users/:id>
+  - **[POST]** <http://localhost:5000/users>
+  - **[PUT]** <http://localhost:5000/users/:id>
+  - **[DELETE]** <http://localhost:5000/users/:id>
