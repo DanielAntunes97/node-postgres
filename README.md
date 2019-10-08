@@ -3,6 +3,10 @@
 <p align="center">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/DanielAntunes97/nodejs-postgres.svg">
   
+  <a href="https://www.codacy.com/app/DanielAntunes97/nodejs-postgres">
+    <img alt="Codacy grade" src="https://img.shields.io/codacy/grade/c5d63b71751446169f46872d7700adde.svg">
+  </a>
+  
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/DanielAntunes97/nodejs-postgres.svg">
   
   <a href="https://github.com/DanielAntunes97/nodejs-postgres/commits/master">
