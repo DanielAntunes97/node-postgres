@@ -30,7 +30,7 @@ foo@bar:~$ npm start
 ### Usage
 
 - Base URL
-    - http://localhost:5000
+  - http://localhost:5000
 - Available endpoints
     - **[GET]** http://localhost:5000/users
     - **[GET]** http://localhost:5000/users/:id
