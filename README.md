@@ -1,5 +1,17 @@
 <h1 align="center">:zap: API Node.js PostgreSQL :rocket:</h1>
 
+<p align="center">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/DanielAntunes97/nodejs-postgres.svg">
+  
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/DanielAntunes97/nodejs-postgres.svg">
+  
+  <a href="https://github.com/DanielAntunes97/nodejs-postgres/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/DanielAntunes97/nodejs-postgres.svg">
+  </a>
+  
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
+</p>
+
 >Creating a simple API using Node.js and PostgreSQL
 
 ## Installation
